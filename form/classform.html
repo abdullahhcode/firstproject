@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Fields</title>
+</head>
+<body>
+    <center>
+    <h1>Form Fields</h1>
+   <form action="thankyou.html" method="get">
+    <fieldset>
+        <legend>Form Fields</legend>
+    <label for="name"> Name</label>
+    <input type="text" id="name" name="name">
+    <br><br>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" >
+    <br><br>
+    <label for="pass">Password/Pin</label>
+    <input type="password" id="pass" name="passowrd" maxlength="5"> (5 characters)
+    <br><br>Select your Gender<br>
+     <input type="radio" value="male" id="male" name="Gender">
+     <label for="male">Male</label>
+     <input type="radio" value="female" id="female" name="Gender">
+     <label for="female">Female</label>
+     <br><br>
+     Select your Course
+     <br>
+     <input type="checkbox" id="Web-development" name="Web-development" checked>
+     <label for="Web-development">Web Development</label>
+     <input type="checkbox" id="Mobile-development" name="Mobile-development">
+     <label for="Mobile-development">Mobile Development</label>
+     <input type="checkbox" id="Data-science" name="Data-science">
+     <label for="Data-science">Data Science</label>
+     <br><br>
+
+
+     Select your City<br><br>
+     <Select multiple size="5">
+        <option value="Karachi">Karachi</option>
+        <option value="Lahore">Lahore</option>
+        <option value="Islamabd">Islamabd</option>
+        <option value="Multan">Multan</option>
+        <option value="Faislabad">Faislabad</option>
+     </Select>
+    <br><br>
+    <input type="submit" value="Submit">
+
+
+
+</fieldset>
+   </form>
+</center>
+</body>
+</html>
