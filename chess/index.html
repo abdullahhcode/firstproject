@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Board</title>
+    <style>
+        .chessboard {
+            border-collapse: collapse;
+            border: 2px solid #333;
+            width: 320px;
+            height: 320px;
+        }
+        .chessboard td {
+            width: 90px;
+            height: 90px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .black {
+            background-color: #779556;
+        }
+        .white {
+            background-color: #ebecd0;
+        }
+        .chessboard img {
+            width: 90px;
+            height: 90px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Chess Board</h1>
+    <table class="chessboard">
+        <!-- Row 1: Black pieces -->
+        <tr>
+            <td class="white"><img src="images/br.png" ></td>
+            <td class="black"><img src="images/bn.png"></td>
+            <td class="white"><img src="images/bb.png"></td>
+            <td class="black"><img src="images/bq.png"></td>
+            <td class="white"><img src="images/bk.png"></td>
+            <td class="black"><img src="images/bb.png"></td>
+            <td class="white"><img src="images/bn.png"></td>
+            <td class="black"><img src="images/br.png"></td>
+        </tr>
+        <!-- Row 2: Black pawns -->
+        <tr>
+            <td class="black"><img src="images/bp.png"></td>
+            <td class="white"><img src="images/bp.png"></td>
+            <td class="black"><img src="images/bp.png"></td>
+            <td class="white"><img src="images/bp.png"></td>
+            <td class="black"><img src="images/bp.png"></td>
+            <td class="white"><img src="images/bp.png"></td>
+            <td class="black"><img src="images/bp.png"></td>
+            <td class="white"><img src="images/bp.png"></td>
+        </tr>
+        <!-- Rows 3-6: Empty squares -->
+        <tr>
+            <td class="white"></td><td class="black"></td><td class="white"></td><td class="black"></td><td class="white"></td><td class="black"></td><td class="white"></td><td class="black"></td>
+        </tr>
+        <tr>
+            <td class="black"></td><td class="white"></td><td class="black"></td><td class="white"></td><td class="black"></td><td class="white"></td><td class="black"></td><td class="white"></td>
+        </tr>
+        <tr>
+            <td class="white"></td><td class="black"></td><td class="white"></td><td class="black"></td><td class="white"></td><td class="black"></td><td class="white"></td><td class="black"></td>
+        </tr>
+        <tr>
+            <td class="black"></td><td class="white"></td><td class="black"></td><td class="white"></td><td class="black"></td><td class="white"></td><td class="black"></td><td class="white"></td>
+        </tr>
+        <!-- Row 7: White pawns -->
+        <tr>
+            <td class="white"><img src="images/wp.png" alt="White Pawn"></td>
+            <td class="black"><img src="images/wp.png" alt="White Pawn"></td>
+            <td class="white"><img src="images/wp.png" alt="White Pawn"></td>
+            <td class="black"><img src="images/wp.png" alt="White Pawn"></td>
+            <td class="white"><img src="images/wp.png" alt="White Pawn"></td>
+            <td class="black"><img src="images/wp.png" alt="White Pawn"></td>
+            <td class="white"><img src="images/wp.png" alt="White Pawn"></td>
+            <td class="black"><img src="images/wp.png" alt="White Pawn"></td>
+        </tr>
+        <!-- Row 8: White pieces -->
+        <tr>
+            <td class="black"><img src="images/wr.png" ></td>
+            <td class="white"><img src="images/wn.png" ></td>
+            <td class="black"><img src="images/wb.png" ></td>
+            <td class="white"><img src="images/wq.png" ></td>
+            <td class="black"><img src="images/wk.png" ></td>
+            <td class="white"><img src="images/wb.png" ></td>
+            <td class="black"><img src="images/wn.png" ></td>
+            <td class="white"><img src="images/wr.png" ></td>
+        </tr>
+    </table>
+</center>
+</body>
+</html>
