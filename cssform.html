@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Styled Form</title>
+<style>
+  body {
+    background-color: #343434;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .form-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #343434; 
+    border-radius: 8px;
+  }
+  .form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  .form-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #666666;
+    outline: none;
+    background: transparent;
+    color: #ffffff;
+    transition: border-color 0.3s, color 0.3s;
+  }
+  .form-field::placeholder {
+    color: #cccccc;
+    transition: color 0.3s;
+  }
+  .form-field:focus {
+    border-bottom-color: #ffffff; 
+    color: #ffffff; 
+  }
+  .form-field:focus::placeholder {
+    color: #ffffff; 
+  }
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%; /* Full width for centering */
+  }
+  .submit-btn, .cancel-btn {
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1; /* Equal width for both buttons */
+    max-width: 120px; /* Adjusts to keep buttons centered */
+    text-align: center;
+  }
+  .submit-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+  }
+  .cancel-btn {
+    background-color: #ffffff;
+    color: #007bff;
+    border: 2px solid #007bff;
+  }
+  .submit-btn:hover, .cancel-btn:hover {
+    opacity: 0.9;
+  }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+  <h1>Contact Us</h1>
+  <form>
+    <input type="text" class="form-field" placeholder="Name" required>
+    <input type="email" class="form-field" placeholder="Email" required>
+    <input type="password" class="form-field" placeholder="Password" required>
+    <input type="number" class="form-field" placeholder="Number" required>
+    <textarea class="form-field" placeholder="Message" rows="4" required></textarea>
+    <div class="button-group">
+      <button type="submit" class="submit-btn">Submit</button>
+      <button type="button" class="cancel-btn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
