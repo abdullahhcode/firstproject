@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 70vh;
+            gap: 30px;
+            
+
+        }
+        h1{
+            margin-top: 50px;
+            text-align: center;
+            width: 100%;
+        }
+        .box{
+            width: 300px;
+            height: 270px;
+            border: 2px solid black;
+            /* display: inline-block; */
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 15px;
+
+            
+        }
+        i {
+            width: 100%;
+            font-size: 50px;
+            text-align: center;
+        }
+        h2{width: 100%;
+            text-align: center;
+        }
+        p{ width: 100%;
+            text-align: center;
+            font-size: 14px;
+            line-height: 22px;
+        }
+        button{
+            width: 100%;
+            padding: 12px 25px;
+            border-radius: 25px;
+            background-color: black;
+            font-weight: 600;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Responsive  Card CSS
+    </h1>
+    <div class="box-container">
+        
+    <div class="box">
+        <i class="fa-brands fa-x-twitter"></i>
+        <h2>Twitter</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, veniam.</p>
+        <button class="btn">Subscribe</button>
+    </div>
+    <div class="box">
+        <i class="fa-brands fa-instagram"></i>
+        <h2>Instagram</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, veniam.</p>
+        <button class="btn">Subscribe</button>
+    </div>
+    <div class="box">
+        <i class="fa-brands fa-youtube"></i>
+        <h2>Youtube</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, veniam.</p>
+        <button class="btn">Subscribe</button>
+    </div>
+</div>
+</body>
+</html>
