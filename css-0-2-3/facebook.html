@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <link rel="icon" href="faebook-favicon.png" type="image/png">
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+        }
+        
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+        }
+        
+        .left-part {
+            flex: 1;
+            max-width: 600px;
+            padding-right: 20px;
+            text-align: left;
+        }
+        
+        .left-part .logo {
+            width: 400px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        
+        .left-part h1 {
+            font-size: 24px;
+            font-weight: 400;
+            color: #333;
+        }
+        
+        .right-part {
+            flex: 1;
+            max-width: 400px;
+        }
+        
+        .login-form {
+            width: 100%;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .login-form h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+        }
+        
+        .login-button {
+            width: 100%;
+            padding: 12px;
+            background-color: #1877f2;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        
+        .login-button:hover {
+            background-color: #155db2;
+        }
+        
+        .forgot-password {
+            font-size: 14px;
+            color: #1877f2;
+            margin-bottom: 20px;
+        }
+        
+        .forgot-password a {
+            color: #1877f2;
+            text-decoration: none;
+        }
+        
+        .divider {
+            height: 1px;
+            background-color: #ddd;
+            margin: 20px 0;
+        }
+        
+        .create-account {
+            width: 100%;
+            padding: 12px;
+            background-color: #42b72a;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        
+        .create-account:hover {
+            background-color: #369822;
+        }
+        </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-part">
+            <img src="Facebook-Logo.png" class="logo">
+            <h1>Connect with friends and the world around you.</h1>
+        </div>
+        
+        <div class="right-part">
+            <div class="login-form">
+                <h2>Log in to Facebook</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <input type="email" placeholder="Email or Phone" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="login-button">Log In</button>
+                    <div class="forgot-password">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <div class="divider"></div>
+                    <button type="button" class="create-account">Create New Account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

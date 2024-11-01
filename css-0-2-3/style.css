@@ -1,0 +1,173 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* Main Background */
+body {
+    background-color: #1e2a38; 
+    color: #ffffff;
+}
+
+.container {
+    width: 98%;
+    padding: 5px 20px;
+    margin: 0 auto;
+}
+
+/* Navbar and Logo */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 98%;
+    padding: 20px 50px;
+}
+
+.logo img {
+    width: 250px;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.nav-links {
+    display: flex;
+    gap: 70px;
+    width: 75%;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px;
+    font-weight: 200;
+}
+
+.nav-links a:hover {
+    color: #ffc024;
+}
+
+.search-icon {
+    font-size: 20px;
+    background-color: #ffc024;
+    cursor: pointer;
+    padding: 15px;
+    color: #1e2a38;
+    border-radius: 100%;
+    border:12px solid #766138;
+
+}
+
+
+.subscribe-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    color: #1e2a38;
+    position: relative;
+    margin: 0 auto;
+    background-color: #1e2a38;
+    border-radius: 10px;
+    height: 700px;
+    
+}
+
+.subscribe-content {
+    width: 50%;
+}
+
+.subscribe-content h1 {
+    font-size: 85px;
+    font-weight: bold;
+    color: #ffc024;
+    line-height: 0.5;
+    margin-bottom: 50px;
+}
+h1.white {
+
+    color: #fff;
+}
+
+.subscribe-content p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 600px;
+    padding-top: 50px;
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+    padding: 17px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin-bottom:15px ;
+    outline: none;
+    width: 100%;
+}
+
+.form button {
+    padding: 15px;
+    font-size: 20px;
+    background-color: #ffc024;
+    color: #1e2a38;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+width: 200px;
+    
+}
+
+.form button:hover {
+    background-color: #ffc024;
+}
+
+.subscribe-image {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-image img {
+    width: 700px;
+    height: 100%;
+   
+}
+
+img.icon{
+    height: 90px;
+    width: 90px;;
+}
+img.rocket{
+    position: absolute;
+    top: 5%;
+    left: 15%;
+}
+img.chat{
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+}
+img.target{
+    position: absolute;
+    bottom: -10%;
+    right: 15%;
+}
