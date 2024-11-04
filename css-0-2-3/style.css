@@ -1,46 +1,45 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Main Background */
 body {
-    background-color: #1e2a38; 
+    background-color: #1e2a38;
     color: #ffffff;
 }
 
 .container {
     width: 98%;
-    padding: 5px 20px;
     margin: 0 auto;
 }
 
 /* Navbar and Logo */
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
     width: 98%;
-    padding: 20px 50px;
+    padding: 2% 4%;
+        text-align: center;
+    display: inline-block;
+    background-color: #1e2a38;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .logo img {
     width: 250px;
-    height: 100%;
-    object-fit: cover;
-    
+    height: auto;
 }
 
 .nav-links {
-    display: flex;
-    gap: 70px;
-    width: 75%;
-    flex-direction: row;
-    justify-content: flex-end;
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+    text-align: right;
 }
 
 .nav-links a {
@@ -49,6 +48,7 @@ body {
     font-size: 22px;
     padding: 10px;
     font-weight: 200;
+    margin:5px 30px;
 }
 
 .nav-links a:hover {
@@ -62,67 +62,62 @@ body {
     padding: 15px;
     color: #1e2a38;
     border-radius: 100%;
-    border:12px solid #766138;
-
+    border: 12px solid #766138;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-
+/* Subscribe Section */
 .subscribe-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
+    display: block;
+    padding: 2% 4%;    
     color: #1e2a38;
     position: relative;
     margin: 0 auto;
     background-color: #1e2a38;
     border-radius: 10px;
     height: 700px;
-    
 }
 
-.subscribe-content {
-    width: 50%;
+.subscribe-content,
+.subscribe-image {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    width: 49%;
 }
 
 .subscribe-content h1 {
-    font-size: 85px;
+    font-size: 4.5em;
     font-weight: bold;
     color: #ffc024;
-    line-height: 0.5;
-    margin-bottom: 50px;
+    text-align: left;
 }
+
 h1.white {
-
     color: #fff;
-}
-
-.subscribe-content p {
-    font-size: 18px;
-    color: #ffffff;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 600px;
-    padding-top: 50px;
+    display: block;
+margin-right: 30% !important;
 }
 
 .form input[type="text"],
 .form input[type="email"] {
+    display: block;
     padding: 17px;
     font-size: 20px;
     border: 1px solid #ccc;
     border-radius: 25px;
-    margin-bottom:15px ;
+    margin-bottom: 15px;
     outline: none;
     width: 100%;
 }
 
 .form button {
+    display: block;
     padding: 15px;
     font-size: 20px;
     background-color: #ffc024;
@@ -130,8 +125,7 @@ h1.white {
     font-weight: bold;
     border: none;
     border-radius: 25px;
-width: 200px;
-    
+    width: 200px;
 }
 
 .form button:hover {
@@ -139,34 +133,34 @@ width: 200px;
 }
 
 .subscribe-image {
+    text-align: center;
     position: relative;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.subscribe-image img {
-    width: 700px;
-    height: 100%;
-   
+.subscribe-image .main-image {
+    width: 90%;
+    height: auto;
 }
 
-img.icon{
-    height: 90px;
-    width: 90px;;
+img.icon {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
 }
-img.rocket{
+
+img.rocket {
     position: absolute;
     top: 5%;
     left: 15%;
 }
-img.chat{
+
+img.chat {
     position: absolute;
     bottom: 0%;
     left: 5%;
 }
-img.target{
+
+img.target {
     position: absolute;
     bottom: -10%;
     right: 15%;
