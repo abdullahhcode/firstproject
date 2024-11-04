@@ -145,7 +145,7 @@ margin-right: 30% !important;
 img.icon {
     height: 80px;
     width: 80px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 img.rocket {
@@ -164,4 +164,10 @@ img.target {
     position: absolute;
     bottom: -10%;
     right: 15%;
+}
+
+img.right-image{
+    height: 600px;
+    width:auto;
+    object-fit: contain;
 }
