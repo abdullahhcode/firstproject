@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background: #1d1d1d;
+        }
+        .box-container{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px 250px 250px;
+        }
+        .box{
+            background-color: brown;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            text-align: center;
+            align-content: center;
+            font-size: 2em;
+
+        }
+
+        .header{
+            background: purple;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .sidebar{
+            background: darkolivegreen;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .content-1{
+            background:indigo;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .footer{
+            background:seagreen;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-container">
+    <div class="box header"><p>Header</p></div>
+    <div class="box sidebar"><p>Sidebar</p></div>
+    <div class="box content-1"><p>Content-1</p></div>
+    <div class="box content-2"><p>Content-2</p></div>
+    <div class="box content-3"><p>Content-3</p></div>
+    <div class="box footer"><p>Footer</p></div>
+
+
+    </div>
+</body>
+</html>
